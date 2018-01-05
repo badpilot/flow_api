@@ -1,0 +1,10 @@
+{
+    "name": "flow-api",
+    "version": "1.0.0",
+    "author": "_pk",
+    "license": "Apache-2.0",
+    "dependencies": {
+        "sequelize": "3.24.1",
+        "mysql": "2.11.1"
+    }
+}
