@@ -1,5 +1,5 @@
 
-const config  = require('.../config');
+const config  = require('../config');
 var Sequelize = require('sequelize');
 var sequelize = new Sequelize(config.database,config.username,config.password,{
     host: config.host,
@@ -39,14 +39,21 @@ var Role_Module_Access = sequelize.define('Role_Module_Access',{
     module_name: {type: Sequelize.STRING(50), allowNull: false}
 });
 
-module.exports = {};
-var user_tablemap = {
-    "User": User,
-    "Role": Role,
-    "Access_Module": Access_Module,
-    "Role_Module_Access": Role_Module_Access
+module.exports = {
+    User: User,
+    Role: Role,
+    Access_Module: Access_Module,
+    Role_Module_Access: Role_Module_Access
 };
+//var user_tablemap =[ User, Role, Access_Module, Role_Module_Access]
+
+//console.log(user_tablemap);
+//var a = user_tablemap.get('User');
+//console.log(user_tablemap.get(User));
+/*
 for(let key of user_tablemap){
+    //console.log(key);
     key.sync();
-    module.exports[key] = user_tablemap.key;
+    //module.exports[key] = user_tablemap.get(key);
 }
+*/

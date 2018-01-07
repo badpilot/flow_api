@@ -18,7 +18,7 @@ var config_test = {
 
 var config_override = {
     dialect: 'mysql',
-    database: 'flow-api',
+    database: 'flow_api',
     username: 'root',
     password: '123456',
     host:'localhost',
