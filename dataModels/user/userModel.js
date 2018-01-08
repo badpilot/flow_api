@@ -43,7 +43,8 @@ module.exports = {
     User: User,
     Role: Role,
     Access_Module: Access_Module,
-    Role_Module_Access: Role_Module_Access
+    Role_Module_Access: Role_Module_Access,
+    sequelize: sequelize
 };
 //var user_tablemap =[ User, Role, Access_Module, Role_Module_Access]
 
